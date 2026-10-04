@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日中IT外来語データベース</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html"><span>IT</span>ことば比較</a>
+    <nav><a class="active" href="index.html">単語を探す</a><a href="form.html">新規登録</a><a href="about.html">概要・使い方</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">JAPANESE × CHINESE</p>
+      <h1>ITのことばを、<br>二つの言語で比べる。</h1>
+      <p>日本語と中国語で使われるIT外来語の表記・意味・使用例を検索できます。</p>
+      <div class="search"><input id="searchInput" type="search" placeholder="例：クラウド、云、cloud"><button id="searchButton">検索</button></div>
+    </section>
+    <section class="content">
+      <div class="section-title"><div><p class="eyebrow">DATABASE</p><h2>登録されている単語</h2></div><span id="count"></span></div>
+      <div id="message" class="message"></div>
+      <div id="wordList" class="word-list"></div>
+    </section>
+  </main>
+  <footer>日中IT外来語比較データベース　制作：于 瀟雨</footer>
+  <script src="script.js"></script>
+</body>
+</html>

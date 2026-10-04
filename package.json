@@ -1,0 +1,12 @@
+{
+  "name": "it-loanword-database",
+  "version": "1.0.0",
+  "description": "日中IT外来語を検索・登録・比較するWebサービス",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

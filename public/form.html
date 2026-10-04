@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>単語の登録</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header><a class="logo" href="index.html"><span>IT</span>ことば比較</a><nav><a href="index.html">単語を探す</a><a class="active" href="form.html">新規登録</a><a href="about.html">概要・使い方</a></nav></header>
+  <main class="narrow">
+    <p class="eyebrow">ADD / EDIT</p><h1 class="page-title" id="formTitle">新しい単語を登録</h1>
+    <p class="lead">日中で比較したいIT外来語の情報を入力してください。<span class="required">＊</span>は必須項目です。</p>
+    <form id="wordForm">
+      <div class="form-grid">
+        <label>英語の原語<span class="required">＊</span><input name="english" required placeholder="cloud"></label>
+        <label>カテゴリー<span class="required">＊</span><input name="category" required placeholder="インターネット"></label>
+        <label>日本語表記<span class="required">＊</span><input name="japanese" required placeholder="クラウド"></label>
+        <label>中国語表記<span class="required">＊</span><input name="chinese" required placeholder="云"></label>
+      </div>
+      <label>日本語での意味<span class="required">＊</span><textarea name="japanese_meaning" required></textarea></label>
+      <label>中国語での意味<span class="required">＊</span><textarea name="chinese_meaning" required></textarea></label>
+      <label>使用例<textarea name="example" placeholder="クラウドに保存する／保存到云端"></textarea></label>
+      <p id="formMessage" class="message"></p>
+      <div class="form-actions"><a class="button secondary" href="index.html">キャンセル</a><button class="button" type="submit">保存する</button></div>
+    </form>
+  </main>
+  <footer>日中IT外来語比較データベース　制作：于 瀟雨</footer>
+  <script src="form.js"></script>
+</body>
+</html>
